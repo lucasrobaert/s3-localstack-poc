@@ -1,4 +1,7 @@
 # Instalação usando docker
+
+Para iniciar o LocalStack via docker, basta seguir os passos abaixo
+
 ```
 mkdir -p ~/localstack/data
 ```
@@ -8,13 +11,12 @@ version: "3.8"
 
 services:
   localstack:
-    container_name: "${LOCALSTACK_DOCKER_NAME:-localstack-main}"
+    container_name: "localstack"
     image: localstack/localstack
     ports:
       - "127.0.0.1:4566:4566"            # LocalStack Gateway
       - "127.0.0.1:4510-4559:4510-4559"  # external services port range
     environment:
-      # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
       - DEBUG=${DEBUG:-0}
     volumes:
       - "~/localstack/data:/var/lib/localstack"
@@ -69,3 +71,6 @@ public static void AddAwsS3Service(this WebApplicationBuilder builder)
 O accessKey e o secretKey podem ser qualquer valor, pelo fato de usarmos localstack.
 
 A implementação é a mesma que usaremos futuramente para conectar no S3.
+
+
+## UI LocalStack

@@ -1,0 +1,12 @@
+﻿services:
+  awslocalpoc.api:
+    image: awslocalpoc.api
+    build:
+      context: .
+      dockerfile: AwsLocalPoc.Api/Dockerfile
+
+  awslocalpoc.api-1:
+    image: awslocalpoc.api-1
+    build:
+      context: .
+      dockerfile: AwsLocalPoc.Api/Dockerfile

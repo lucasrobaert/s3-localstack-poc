@@ -1,0 +1,6 @@
+@AwsLocalPoc.Api_HostAddress = http://localhost:5164
+
+GET {{AwsLocalPoc.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

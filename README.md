@@ -73,4 +73,13 @@ O accessKey e o secretKey podem ser qualquer valor, pelo fato de usarmos localst
 A implementação é a mesma que usaremos futuramente para conectar no S3.
 
 
-## UI LocalStack
+## Resource Browser LocalStack
+
+The LocalStack Web Application provides a Resource Browser for managing S3 buckets & configurations. You can access the Resource Browser by opening the LocalStack Web Application in your browser, navigating to the Resources section, and then clicking on S3 under the Storage section.
+
+
+Acesse o site: https://app.localstack.cloud/
+
+Navegue até LocalStack Instances
+
+Clique em Resouce browser e selecione o S3
